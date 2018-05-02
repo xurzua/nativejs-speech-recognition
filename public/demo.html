@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo</title>
+    <title>Native Speech Recognition Demo!</title>
     <link rel="stylesheet" href="./demo.css">
 
     <script>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1>Demo Reconocimiento de Voz Nativo</h1>
+    <h1>Native Speech Recognition Demo!</h1>
     <h2>Output:</h2>
     <button type="reset" onclick="clearBox('words')">Clear</button>
     <div class="words" contenteditable="true"></div>
@@ -28,7 +28,9 @@
 
         const recognition = new SpeechRecognition();
         recognition.interimResults = true;
-        recognition.lang = 'es-LA';
+        
+        // Un-comment and change the value below to use a strict Recognition Language
+        /* recognition.lang = 'es-LA'; */
 
         let p = document.createElement("p");
         const words = document.querySelector(".words");
@@ -40,7 +42,7 @@
 
             p.textContent = transcript;
 
-            console.log(event);
+            console.log(event.result[0]);
 
             if (event.results[0].isFinal) {
                 p = document.createElement("p");
