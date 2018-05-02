@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="./demo.css">
+
+    <script>
+        function clearBox(elementID) {
+            document.getElementById(elementID).innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Demo Reconocimiento de Voz Nativo</h1>
+    <h2>Output:</h2>
+    <button type="reset" onclick="clearBox('words')">Clear</button>
+    <div class="words" contenteditable="true"></div>
+
+    <script>
+
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+        var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+        var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+
+        const recognition = new SpeechRecognition();
+        recognition.interimResults = true;
+        recognition.lang = 'es-LA';
+
+        let p = document.createElement("p");
+        const words = document.querySelector(".words");
+        words.appendChild(p);
+
+        recognition.addEventListener("result", (event) => {
+
+            const transcript = Array.from(event.results).map(result => result[0]).map(result => result.transcript).join("");
+
+            p.textContent = transcript;
+
+            console.log(event);
+
+            if (event.results[0].isFinal) {
+                p = document.createElement("p");
+                words.appendChild(p);
+            }
+        }
+        );
+
+        recognition.addEventListener("end", recognition.start);
+
+        recognition.start();
+    </script>
+
+</body>
+
+</html>
