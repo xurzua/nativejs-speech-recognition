@@ -29,8 +29,10 @@
         const recognition = new SpeechRecognition();
         recognition.interimResults = true;
         
-        // Un-comment and change the value below to use a strict Recognition Language
-        /* recognition.lang = 'es-LA'; */
+        // Un-comment and change the value below to use a strict Recognition Language. 
+        // By default will use your browsers / system native language.
+        
+        // recognition.lang = 'es-LA';
 
         let p = document.createElement("p");
         const words = document.querySelector(".words");
@@ -42,7 +44,7 @@
 
             p.textContent = transcript;
 
-            console.log(event.result[0]);
+            console.log(event.result);
 
             if (event.results[0].isFinal) {
                 p = document.createElement("p");
