@@ -19,6 +19,7 @@
   "author": "Xavier Urzúa",
   "license": "MIT",
   "dependencies": {
+    "config": "^1.30.0",
     "express": "^4.16.3"
   },
   "devDependencies": {

@@ -1,7 +1,8 @@
 const express = require('express')
-const app = express()
+const config = require('config')
 
-const PORT = 3000
+const app = express()
+const PORT = config.get('server.port')
 
 app.use(express.static('public'))
 app.listen(PORT, () =>
