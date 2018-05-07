@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Native Speech Recognition Demo!</title>
     <link rel="stylesheet" href="./demo.css">
-
-    <script>
-        function clearBox(elementID) {
-            document.getElementById(elementID).innerHTML = "";
-        }
-    </script>
 </head>
 
 <body>
@@ -30,7 +24,7 @@
         recognition.interimResults = true;
 
         // Un-comment and change the value below to use a strict Recognition Language. 
-        // By default will use your browsers / system native language.
+        // By default will use the <html lang> tag of the document if not specified.
 
         // recognition.lang = 'es-LA';
 
