@@ -14,7 +14,7 @@ Works only on Google Chrome / Chromium ...for now ;)!
 * Clone this repo into your local machine:
 
 ```sh
-git clone https://github.com/rfrobisher/nativejs-speech-recognition
+git clone https://github.com/xurzua/nativejs-speech-recognition
 ```
 
 * Go to the cloned directory and install it's dependencies:
