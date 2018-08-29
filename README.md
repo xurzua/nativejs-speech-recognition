@@ -4,6 +4,8 @@ Simple demo using vanilla Javascript and the WebSpeechAPIs.
 
 Works only on Google Chrome / Chromium ...for now ;)!
 
+See the demo on Glitch here: https://nativejs-speech-recognition.glitch.me/
+
 ## Requirements
 
 * Node.js >= 8.10.
@@ -42,7 +44,7 @@ SpeechRecognition demo app is listening on port 3000!
 * Open the following URL in your Chrome / Chromium browser:
 
 ```
-http://localhost:3000/demo.html
+https://localhost:3000/
 ```
 * If you need to change the server port, you can modify the config file provided in the config directory.
 
