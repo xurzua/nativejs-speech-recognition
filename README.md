@@ -6,7 +6,7 @@ Works only on Google Chrome / Chromium ...for now ;)!
 
 See the demo here 👉 https://nativejs-speech-recognition.glitch.me/
 
-Or remix this repo on Glitch 👇
+Or remix this repo on Glitch 👉
 <a href="https://glitch.com/edit/#!/remix/nativejs-speech-recognition">
   <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix button" aria-label="remix" height="33">
 </a>
