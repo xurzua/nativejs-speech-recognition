@@ -6,5 +6,5 @@ const PORT = config.get('server.port')
 
 app.use(express.static('public'))
 app.listen(PORT, () =>
-    console.log(`SpeechRecognition demo app is listening on port ${PORT}!`)
+    console.log(`Speech Recognition demo app is listening on port ${PORT}!`)
 )
