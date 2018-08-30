@@ -1,7 +1,7 @@
 {
   "name": "nativejs-speech-regcognition",
   "version": "1.0.0",
-  "description": "A simple demo using vanilla Javascript and the WebSpeechAPI",
+  "description": "Simple demo using vanilla Javascript and the browser Web Speech APIs.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -14,16 +14,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rfrobisher/nativejs-speech-recognition"
+    "url": "https://github.com/xurzua/nativejs-speech-recognition"
   },
   "author": "Xavier Urzúa",
   "license": "MIT",
   "dependencies": {
     "config": "^1.30.0",
     "express": "^4.16.3"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0"
   }
 }
